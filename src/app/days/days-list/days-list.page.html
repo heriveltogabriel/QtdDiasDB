@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+
+<ion-content [fullscreen]="true">
+
+    <ion-list class="item-content" >
+
+        <div *ngFor="let evento of eventos">
+            <ion-item class="ion-no-padding item-content" lines="none">
+                <div class=" tela  card card-style mb-3 "  (click)="editar(evento)">
+                    <div class="d-flex">
+                        <div class="ps-3 ms-2 align-self-center">
+                            <h1 class="pt-3 font-18">{{evento.titulo}}</h1>
+                            <p class="font-11 opacity-50 mt-n2 mb-4">{{evento.descricao}}</p>
+                        </div> 
+                        <div class="ms-auto me-1 align-self-center">
+                            <strong class="float-end text-center">
+                                <div class="bg-theme rounded-sm color-theme shadow-xl text-center m-2 overflow-hidden">
+                                    <span class="bg-red-dark font-8 d-block mb-2 px-3 line-height-xs py-1">DIAS</span>
+                                    <span class="font-23 color-black font-800 d-block mb-n3 line-height-s">{{evento.dias}}</span><br>
+                                </div>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </ion-item>
+        </div>
+    </ion-list>
+</ion-content> 
+
+<br/> <br/>
+    <app-footer></app-footer>

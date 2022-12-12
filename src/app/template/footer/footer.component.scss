@@ -1,0 +1,17 @@
+.footer{
+    --background:  url('../../../assets/images/pictures/10.jpg' );
+    --background-color: linear-gradient(to right, rgba(252, 176, 69, 1) 0%, rgba(255, 149, 0, 1) 50%, rgba(241, 90, 41, 1) 100%) !important;
+    max-height: 35px;
+  }
+
+  // ion-fab{
+  //   display: flex;
+  //   width: 100%;
+  //   flex-direction: row;
+  //   justify-content: end;
+    
+  // }
+
+  .fab { display: flex-end !important}
+
+  

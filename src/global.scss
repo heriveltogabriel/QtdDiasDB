@@ -1,0 +1,44 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import 'assets/styles/bootstrap.css';
+@import 'assets/styles/style.css';
+@import 'assets/fonts/css/fontawesome-all.min.css';
+
+ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+  } 
+  
+.ions-tabs {
+  
+    --url: url('assets/images/pictures/23.jpg' ) ;
+    background: var(--url);
+    background-repeat:repeat-x;
+    background-position:center center;
+    padding-bottom: 50px;
+  }

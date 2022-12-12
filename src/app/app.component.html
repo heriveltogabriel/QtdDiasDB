@@ -1,0 +1,41 @@
+<ion-app>
+  <ion-split-pane contentId="main-content">
+    <ion-menu contentId="main-content" type="overlay">
+      <ion-content>
+
+        <ion-list id="inbox-list"  >
+
+          <div class="d-flex config bg-gradient ions-tabs2">
+            <div class="me-3">
+              <img src="../../../assets/images/days/photo1.png" width="55" class="mx-auto rounded-circle mb-n3">
+            </div>
+            <div class="flex-grow-1">
+              <ion-list-header class="">Herivelto G</ion-list-header>
+              <ion-note class="font-12 badge bg-red-dark">Engineer Developer</ion-note>
+              <!-- <p class="mt-n2  font-10 font-400">Engenier Systems</p> -->
+          </div>
+          </div>
+
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+        </ion-list>
+
+        <ion-list id="labels-list">
+          <ion-list-header>Divulgar</ion-list-header>
+
+          <ion-item *ngFor="let label of labels" lines="none">
+            <ion-icon slot="start" ios="thumbs-up" md="thumbs-up"></ion-icon>
+            <ion-label>{{ label }}</ion-label>
+          </ion-item>
+        </ion-list>
+
+      </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main-content"></ion-router-outlet>
+  </ion-split-pane>
+</ion-app>

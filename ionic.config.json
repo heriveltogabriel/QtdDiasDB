@@ -1,0 +1,8 @@
+{
+  "name": "QTdDias",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

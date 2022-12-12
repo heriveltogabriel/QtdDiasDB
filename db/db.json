@@ -1,0 +1,52 @@
+{
+  "eventos": [
+    {
+      "id": 1,
+      "titulo": "Cortar Cabelo",
+      "descricao": "",
+      "dataInicio": "2021-08-06T00:14:30.070Z",
+      "arquivada": "false"
+    },
+    {
+      "id": 2,
+      "titulo": "Troca da Lâminha de barbear",
+      "dataInicio": "2021-08-05",
+      "descricao": ""
+    },
+    {
+      "titulo": "Fralda do Marty",
+      "descricao": "Pacote 40 Fraldas",
+      "dataInicio": "2021-08-23",
+      "dataFinal": "2021-08-26T18:55:39.108Z",
+      "arquivado": false,
+      "id": 3
+    },
+    {
+      "titulo": "Novo",
+      "descricao": "Teste",
+      "dataInicio": "2022-09-20T01:20:21.149Z",
+      "dataFinal": null,
+      "arquivado": false,
+      "dias": null,
+      "id": 4
+    },
+    {
+      "titulo": "Teste",
+      "descricao": "Testando",
+      "dataInicio": "2022-09-20T03:31:09.889Z",
+      "dataFinal": null,
+      "arquivado": false,
+      "dias": null,
+      "id": 5
+    },
+    {
+      "titulo": "Cortar Cabelo",
+      "descricao": "Josias",
+      "dataInicio": "2022-09-20T03:31:47.081Z",
+      "dataFinal": null,
+      "arquivado": false,
+      "dias": null,
+      "id": 6
+    }
+  ]
+}

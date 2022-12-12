@@ -1,0 +1,35 @@
+
+
+.text-resp {
+    font-size: 1.5vh;
+}
+
+.android-fix .input-style input[type=date] {
+    color: inherit!important;
+    line-height: 25px!important;
+    padding-top:12px!important;
+    height: 55px!important;
+    transform:translateY(7px) translateX(0px)!important;
+    margin-bottom:30px!important;
+}
+
+.android-fix label.color-highlight{
+    margin-top:7px!important;
+}
+
+.btstyle{
+  height: 40px;
+  display: block;
+  --vertical-align: middle;
+}
+
+//ALERT 
+.my-custom-class {
+    --backdrop-opacity: 0.2;
+    --background: linear-gradient(90deg, rgba(165, 255, 192, 1) 1%, rgba(0, 212, 255, 1) 100%);
+}
+
+.tamanho{
+    font-size: 1.5em;
+}
+

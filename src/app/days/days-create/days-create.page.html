@@ -1,0 +1,77 @@
+
+ <!-- COMPONENTE CABECALHO BACK BUTTON  -->
+ <app-back-menu></app-back-menu>
+ <!-- CABECALHO  -->
+
+
+<!-- FORM CRIAR -->
+
+<div class="card card-style mb-2">
+    <div class="content">
+        <div *ngIf="SALVAR" >
+            <h1 class="tamanho">Criar Memória</h1>
+        </div>
+        <div *ngIf="!SALVAR" >
+            <h1>Editar Memória</h1>
+        </div>   
+            <div class="input-style has-borders has-icon validate-field mb-4">
+                <i class="fa fa-id-card"></i>
+                <input type="text" class="form-control validate-name" id="form1" placeholder="Título"  [(ngModel)]="evento.titulo" >
+                <label for="form1" class="color-highlight">Título</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+                <em>(required)</em>
+            </div>
+            <div class="input-style textarea has-borders has-icon validate-field mb-4">
+                <i class="fa fa-sticky-note"></i>
+                <input type="textarea" class="form-control validate-textarea" id="form1" placeholder="Descrição" [(ngModel)]="evento.descricao">
+                <label for="form1" class="color-highlight">Descrição</label>
+                <i class="fa fa-times disabled invalid color-red-dark"></i>
+                <i class="fa fa-check disabled valid color-green-dark"></i>
+            </div>
+
+            <div class="android-fix">
+                <div class="input-style has-borders has-icon mb-4">
+                    <i class="fa fa-calendar" style="margin-top:0px; z-index:10;"></i>
+                   
+                    <input type="date" [ngModel]="evento.dataInicio | date:'yyyy-MM-dd'" (ngModelChange)="evento.dataInicio = $event"  class="form-control validate-text" id="form6" placeholder="dd/MM/yyyy" style="width: calc(100vw - 64px);display: block;appearance: none;-webkit-appearance: none;padding-top: 2px;">
+                    <label for="form6" class="color-highlight">Select Date</label>
+                    <i class="fa fa-check disabled valid me-4 pe-3 font-12 color-green-dark"></i>
+                    <i class="fa fa-check disabled invalid me-4 pe-3 font-12 color-red-dark"></i>
+                    <em>(required)</em>
+                </div>
+            </div>
+            <!-- BOTÃO SALVAR               -->
+            <div class="row mb-0" *ngIf="SALVAR">
+                <div class="colDA ps-1 ">
+                    <ion-button  class="text-resp btn-full " color="success" (click)="salvar()">Salvar</ion-button >
+                </div>
+            </div>
+            <!-- BOTOES DE EDIÇÃO  -->
+            <div *ngIf="!SALVAR" >
+                <div class="row mb-0">
+                    <div class="col-4 pe-1 ">
+                        <ion-button  class="text-resp btn-full " color="danger" (click)="confirmaExcluir(evento)">Excluir</ion-button >
+                    </div>
+
+                    <div class="col-4 pe-1  ">
+                        <ion-button  class="text-resp btn-full " color="success" (click)="editar(evento)">Salvar</ion-button >
+                    </div>
+
+                    <div class="col-4 pe-1" >
+                        <ion-button  class="text-resp btn-full " color="secondary" (click)="arquivar(evento)">Arquivar</ion-button >
+                    </div>
+                </div>
+            </div>  
+
+        <br/>
+
+
+      </div>       
+</div>
+
+<!-- FIM FORM CRIAR  -->
+
+
+
+          
